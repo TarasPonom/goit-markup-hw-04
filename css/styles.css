@@ -149,7 +149,8 @@ img {
 }
 
 .nav-icons {
-  fill: black;
+  margin-right: 10px;
+  fill: var(--second-text-color);
 }
 
 .filter-button {
@@ -473,7 +474,19 @@ img {
 
 .text-box {
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+.footer-social {
+  margin-left: 70px;
+}
+.footer-socials-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+
+  color: var(--second-button-text-color);
+  text-transform: uppercase;
 }
