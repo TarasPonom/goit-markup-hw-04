@@ -189,7 +189,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-backgraund.jpg);
+    URL(../images/hero-backgraund.jpg);
   padding: 200px 0;
   background-color: var(--background-color);
   flex-grow: 1;
@@ -479,8 +479,17 @@ img {
   border-left: 1px solid #fff;
 }
 .footer-social {
+  width: 206px;
+  height: 80px;
   margin-left: 70px;
 }
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .footer-socials-title {
   font-weight: 700;
   font-size: 14px;
@@ -489,4 +498,21 @@ img {
 
   color: var(--second-button-text-color);
   text-transform: uppercase;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+.footer-socials-link {
+  display: block;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: white;
 }
