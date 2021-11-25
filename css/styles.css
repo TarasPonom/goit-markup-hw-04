@@ -532,8 +532,8 @@ img {
   border-left: 1px solid #fff;
 }
 .footer-social {
-  width: 206px;
-  height: 80px;
+  min-width: 206px;
+  min-height: 80px;
   margin-left: 70px;
 }
 
@@ -543,7 +543,7 @@ img {
   justify-content: space-between;
 }
 
-.footer-socials-title {
+.footer-social-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -556,7 +556,8 @@ img {
   display: flex;
   align-items: center;
 }
-.footer-socials-link {
+
+.footer-social-link {
   display: block;
   border-radius: 50%;
   width: 44px;
@@ -566,11 +567,11 @@ img {
   align-items: center;
   justify-content: center;
 
-  background-color: rgba(255, 255, 255, 0.1);
   fill: var(--second-button-text-color);
 }
-.footer-socials-link:hover,
-.footer-socials-link:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
+  fill: var(--second-button-text-color);
   background-color: var(--accent-color);
 }
 
