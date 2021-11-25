@@ -152,6 +152,9 @@ img {
   margin-right: 10px;
   fill: var(--second-text-color);
 }
+.contacts-text:hover {
+  color: var(--accent-color);
+}
 
 .filter-button {
   font-family: "Roboto", sans-serif;
@@ -200,6 +203,10 @@ img {
 }
 
 .hero-text {
+  height: 120px;
+  width: 696px;
+  top: 280px;
+  margin-left: 226px;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -222,6 +229,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--second-button-text-color);
   background-color: var(--accent-color);
+  cursor: pointer;
   text-align: center;
   border: none;
   border-radius: 4px;
@@ -527,6 +535,12 @@ img {
 .footer-socials-link:focus {
   background-color: var(--accent-color);
 }
+
+.clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 .clients-list {
   display: flex;
   align-items: center;
