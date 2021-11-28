@@ -510,9 +510,12 @@ img {
   overflow: hidden;
 }
 
-.cards-item:hover .our-produkt-description,
-.cards-item:focus .our-produkt-description {
+.cards-item:hover .our-produkt-description {
   transform: translateY(0);
+}
+.our-product-link:focus .our-produkt-description {
+  transform: translateY(0);
+}
 
 .our-produkt-wrap {
   width: 100%;
