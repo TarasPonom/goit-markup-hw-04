@@ -5,6 +5,8 @@
   --accent-color: #2196f3;
   --first-button-text-color: #212121;
   --second-button-text-color: #ffffff;
+  --animation-duration: 300ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -91,6 +93,10 @@ img {
   margin-left: auto;
 }
 
+.link-nav-flex {
+  display: flex;
+}
+
 .link-nav {
   display: flex;
   font-size: 14px;
@@ -98,6 +104,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition: color var(--animation-duration) var(--timing-function);
 }
 
 .link-nav:hover,
@@ -122,8 +129,23 @@ img {
   margin-left: 50px;
 }
 
+.nav-menu-item {
+  position: relative;
+}
+
 .link-nav-text {
   padding: 32px 0;
+}
+
+.link-nav.current::after {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  bottom: -1px;
 }
 
 .contacts-text {
@@ -137,6 +159,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   cursor: pointer;
+  transition: color var(--animation-duration) var(--timing-function);
 }
 
 .nav-contact-item:not(:first-child) {
@@ -148,17 +171,14 @@ img {
   color: var(--accent-color);
 }
 
-.contacts-text {
-  fill: var(--second-text-color);
-}
-
 .contacts-text:hover,
 .contacts-text:focus {
   fill: var(--accent-color);
 }
 
-.contacts-text > .nav-icons {
+.nav-icons {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .filter-button {
@@ -239,6 +259,12 @@ img {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--animation-duration) var(--timing-function);
+}
+
+.main-button:focus,
+.main-button:hover {
+  background-color: #188ce8;
 }
 
 .advantages-section {
@@ -301,6 +327,30 @@ img {
 .wedo-list:not(:first-child) {
   margin-left: 30px;
 }
+
+.wedo-list {
+  position: relative;
+}
+
+.wedo-backdrop {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--second-button-text-color);
+  text-align: center;
+  background: #2f303acc;
+}
+.wedo-prodyct {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
 /*--------TEAM-----------*/
 .team {
   background-color: #f5f4fa;
@@ -367,6 +417,7 @@ img {
 
   background-color: transparent;
   color: #afb1b8;
+  transition: background-color var(--animation-duration) var(--timing-function);
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -412,6 +463,7 @@ img {
   border: #afb1b8 1px solid;
   cursor: pointer;
   color: #afb1b8;
+  transition: color var(--animation-duration) var(--timing-function);
 }
 
 .clients-logo {
@@ -454,9 +506,37 @@ img {
   margin-top: 30px;
 }
 
-.cards-item {
-  width: 370px;
+.our-produkt-wrap {
+  overflow: hidden;
 }
+
+.cards-item:hover .our-produkt-description,
+.cards-item:focus .our-produkt-description {
+  transform: translateY(0);
+
+.our-produkt-wrap {
+  width: 100%;
+
+  position: relative;
+}
+
+.our-produkt-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
+  text-align: center;
+  color: var(--second-button-text-color);
+  background-color: #2196f3e5;
+  height: 100%;
+
+  transform: translateY(100%);
+  transition: transform var(--animation-duration);
+}
+
 .our-product-title {
   font-weight: 700;
   font-size: 18px;
@@ -533,6 +613,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--animation-duration) var(--timing-function);
 }
 .contact-text-footer:hover,
 .contact-text-footer:focus,
@@ -567,7 +648,7 @@ img {
 }
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-social-link {
@@ -581,11 +662,10 @@ img {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--second-button-text-color);
+  transition: background-color var(--animation-duration) var(--timing-function);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
   fill: var(--second-button-text-color);
   background-color: var(--accent-color);
 }
-
-/*-----КЛИЕНТЫ------*/

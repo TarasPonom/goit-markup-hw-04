@@ -15,13 +15,13 @@
 
     <header class="header-border">
 
-        <div class="link-nav container">
+        <div class="link-nav-flex container">
 
-            <nav class="link-nav"> 
+            <nav class="link-nav-flex"> 
 
                 <a href="./index.html" class="logo-text" lang="en">Web<span class="logo-accent">Studio</span>
                     </a>
-
+                    
                         <ul class="list link-nav-menu">
 
                             <li class="nav-menu-item">
@@ -136,15 +136,25 @@
                 <ul class="list wedo-ul">
 
                     <li class="wedo-list">  
-                        <img src="./images/1.jpg" alt="набор кода на клавиатуре" width="370"/>
+                        
+                            <img src="./images/1.jpg" alt="набор кода на клавиатуре" width="370"/>
+                            <div class="wedo-backdrop">
+                                <p class="wedo-prodyct">Десктопные Приложения</p>
+                            </div>
                     </li>
 
                     <li class="wedo-list"> 
                         <img src="./images/2.jpg" alt="телефон и ноутбук" width="370" />
+                        <div class="wedo-backdrop">
+                            <p class="wedo-prodyct">мобильные Приложения</p>
+                        </div>
                     </li>
 
                     <li class="wedo-list"> 
                         <img src="./images/3.jpg" alt="планшет с карандашом" width="370" />
+                        <div class="wedo-backdrop">
+                            <p class="wedo-prodyct">дизайнерские решения</p>
+                        </div>
                     </li>
 
                 </ul>
@@ -367,71 +377,74 @@
         </section>
     </main>
 <!--Контакты-->
-    <footer class="footer">
-        <div class="container footer-container">
-             <div>
-            <a class="logo-text-footer link" href="./index.html" lang="en">Web<span class="logo-accent-footer">Studio</span></a>
-                <address class="">
-                    <ul class="addres-ul list">
-                        <li class="footer-link">
-                            <a href="https://goo.gl/maps/hZzf7caE62ZYmh6s7" target="_blank" rel="noopener noreferrer"
-                                class="address link"> г. Киев, пр-т
-                                Леси Украинки, 26
-                            </a>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div>
+                <a class="logo-text-footer link" href="./index.html" lang="en">Web<span class="logo-accent-footer">Studio</span></a>
+                    <address class="">
+                        <ul class="addres-ul list">
+                            <li class="footer-link">
+                                <a href="https://goo.gl/maps/hZzf7caE62ZYmh6s7" target="_blank" rel="noopener noreferrer"
+                                    class="address link"> г. Киев, пр-т
+                                    Леси Украинки, 26
+                                </a>
+                            </li>
+                
+                            <li class="footer-link">
+                                <a href="mailto:info@example.com" class="contact-text-footer link">info@example.com</a>
+                            </li>
+                
+                            <li class="footer-link">
+                                <a href="tel:+380991111111" class="contact-text-footer link">+38 099 111 11  11</a>
+                            </li>
+                
+                        </ul>
+                    </address>
+                </div>
+                
+                <div class="footer-icons">
+                    <h2 class="footer-social-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+                        <ul class="list footer-social-list">
+                            <li>
+                                <a class="footer-social-link link" href="">
+                                    <svg class="team-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#instagram-2-1"></use>                               
+                                    </svg>
+                                </a>
                         </li>
-            
-                        <li class="footer-link">
-                            <a href="mailto:info@example.com" class="contact-text-footer link">info@example.com</a>
+                            <li>
+                                <a class="footer-social-link link" href="">
+                                    <svg class="team-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#twitter-1-1"></use>
+                                    </svg>
+                                </a>
                         </li>
-            
-                        <li class="footer-link">
-                            <a href="tel:+380991111111" class="contact-text-footer link">+38 099 111 11  11</a>
+                            <li>
+                                <a class="footer-social-link link" href="">
+                                    <svg class="team-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#facebook-1"></use>
+                                    </svg>
+                                </a>
                         </li>
-            
-                    </ul>
-                </address>
+                            <li>
+                                <a class="footer-social-link link" href="">
+
+                                    <svg class="team-icon" width="20" height="20">
+
+                                        <use href="./images/icons.svg#linkedin-1"></use>
+
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                </div>
+
             </div>
-            
-            <div class="footer-icons">
-                <h2 class="footer-social-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-                    <ul class="list footer-social-list">
-                        <li>
-                            <a class="footer-social-link link" href="">
-                                <svg class="team-icon" width="20" height="20">
-                                    <use href="./images/icons.svg#instagram-2-1"></use>                               
-                                </svg>
-                            </a>
-                    </li>
-                        <li>
-                            <a class="footer-social-link link" href="">
-                                <svg class="team-icon" width="20" height="20">
-                                    <use href="./images/icons.svg#twitter-1-1"></use>
-                                </svg>
-                            </a>
-                    </li>
-                        <li>
-                            <a class="footer-social-link link" href="">
-                                <svg class="team-icon" width="20" height="20">
-                                    <use href="./images/icons.svg#facebook-1"></use>
-                                </svg>
-                            </a>
-                    </li>
-                        <li>
-                            <a class="footer-social-link link" href="">
-                                <svg class="team-icon" width="20" height="20">
-                                    <use href="./images/icons.svg#linkedin-1"></use>
-                                </svg>
-                            </a>
-                        </li>
 
-                    </ul>
+        </footer>
 
-            </div>
-
-           
-
-        </div>
-
-    </footer>
+        <script src="./js/modal.js"></script>
+    
     </body>
 </html>
